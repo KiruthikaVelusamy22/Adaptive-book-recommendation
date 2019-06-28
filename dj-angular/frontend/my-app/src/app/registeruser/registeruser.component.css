@@ -1,0 +1,15 @@
+
+.card-img-top{
+    width: 199px;
+    height: 200px;  
+}
+
+.card{
+    width: 199px;
+    height: 290px;
+    margin: 5px;
+}
+.col-4{
+    height: 300px;
+    width: 199px;
+}

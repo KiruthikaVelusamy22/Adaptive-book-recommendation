@@ -1,0 +1,46 @@
+
+
+    <!-- Bootstrap core CSS -->
+
+
+    <!-- Custom styles for this template -->
+  
+
+
+
+
+    <main role="main">
+
+      <!-- Main jumbotron for a primary marketing message or call to action -->
+      <div class="jumbotron">
+        <div class="container">
+          <h1 class="display-3">Hello, User!</h1>
+          <p>Following books are recommended for you. Please click button if you want change your mood preference!!.</p>
+          <p><a class="btn btn-primary btn-lg" href="http://localhost:4201/Mood" role="button">Not in the mood {{Mood}} &raquo;</a></p>
+        </div>
+      </div>
+
+      <div class="card-deck">
+        <div class="card">
+          <img src={{data[0].CoverUrl}} class="card-img-top" alt="book1">
+          <div class="card-body">
+            <a routerLink="ViewDetails" style="margin-left:150px;margin-top: 10px" class="btn btn-primary" (click)="ViewDetails(data[0].Book)">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src={{data[1].CoverUrl}} class="card-img-top" alt="book2">
+          <div class="card-body">
+            <a routerLink="ViewDetails"  style="margin-left:150px;"class="btn btn-primary" (click)="ViewDetails(data[1].Book)">View Details</a>
+          </div>
+        </div>
+        <div class="card">
+          <img src={{data[2].CoverUrl}} class="card-img-top" alt="Book3">
+          <div class="card-body">
+            <a routerLink="ViewDetails" style="margin-left:150px;" class="btn btn-primary" (click)="ViewDetails(data[2].Book)">View Details</a>
+          </div>
+        </div>
+      </div>
+        <hr>
+    </main>
+
+  

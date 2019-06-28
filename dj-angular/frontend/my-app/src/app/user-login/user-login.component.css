@@ -1,0 +1,30 @@
+.example-card {
+    height: 800px;
+    align: center;
+    /* margin-left: 50% */
+  }
+.container{
+    align-items: center;
+}
+.content{
+    margin-left: 40% ;
+    margin-top: 100px;
+    
+}
+.login_button{
+    margin-left: 600px ; 
+   
+}
+
+image{
+   
+    background-image:url("/frontend/my-app/src/assets/images/loading/Background.jpg");
+    position: fixed;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    background-size: cover;
+     
+  } 
+ 

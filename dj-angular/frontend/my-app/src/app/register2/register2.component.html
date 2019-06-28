@@ -1,0 +1,52 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">Hello {{usernameDB}}</h1>
+    <p>Do You See genre you like ? Please click (2 of them) like!!</p>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="row">
+ 
+      <div class="col-2" style="
+      margin-left: 200px; margin-top:50px; align-content: center"  *ngFor="let img of img1">
+        <div class="card"  style="
+        margin-left: 40px;" >
+          <img class="card-img-top" src={{img}} alt="Card image cap">
+          
+          <div class="card-body">
+            
+           </div>
+        </div>
+ 
+  </div>
+  <div class="col-2" style="
+  margin-left: 200px; margin-top:50px; align-content: center"  >
+  <div class="cardbooks">
+    <div class="card"  style="width: 500px;height: 710px;
+    margin-left: 100px;" >
+      <div class="card-body">
+          <ul class="list-group list-group-flush" *ngFor="let bookname of bookList">
+            
+                
+                   
+                        <!-- <label class="form-check-label">
+                           <input type="checkbox" [ngModel]="bookname" #input>{{bookname}}
+                        </label> -->
+                        <button  [style.background-color]="toggle ? '' : 'white'" type="button" class="btn btn" (click)="proceedToHome(bookname)" >{{bookname}}</button>
+                  
+                
+             
+          
+            </ul>
+       </div>
+      </div>
+      </div>
+      <button type="button" style="
+ margin-left: 250px;" class="btn btn-primary" (click)="LoadHome()" >Submit</button>
+    </div>
+ <!-- <button type="button" style="
+ margin-left: 550px;" class="btn btn-primary" (click)="proceedToHome()" >Submit</button> -->
+ </div>
+ </div>

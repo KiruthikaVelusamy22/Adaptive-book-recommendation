@@ -1,0 +1,46 @@
+
+<mat-card class="example-card" >
+    <div class="container">
+    <mat-card-content class="content">
+        <mat-card-header >
+            <mat-card-title >Login</mat-card-title>
+          </mat-card-header>
+      <form class="example-form" >
+        <table class="example-full-width" cellspacing="0">
+          <tr>
+            <td>
+              <mat-form-field class="example-full-width">
+              <input matInput placeholder="Username" [(ngModel)]="username" name="username" required>
+              </mat-form-field>
+            </td>
+          </tr>
+          <tr>
+          <td><mat-form-field class="example-full-width">
+            <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required>
+          </mat-form-field></td>
+        </tr></table>
+      </form>
+      <mat-spinner [style.display]="showSpinner ? 'block' : 'none'"></mat-spinner>
+    </mat-card-content>
+  </div>
+    <mat-card-actions class="login_button">
+      <button mat-raised-button  (click)="LoginUser(username)" color="primary" [routerLink] >Login</button>
+      <button mat-raised-button  (click)="registerUser()" color="primary" [routerLink] >Register</button>
+    </mat-card-actions>
+    
+</mat-card> 
+
+<!-- <form>
+  <h1>LisMoi</h1>
+  <div class="input">
+    <label>Username</label>
+    <input type="text" name="username" [(ngModel)]="username">
+  </div>
+  <div class="input">
+    <label>Password </label>
+    <input type="password" name="password" [(ngModel)]="password">
+  </div>
+  <a routerLink="home"><div class = "input">
+      <input type ="submit" value="login" (click)="LoginUser()" [routerLink]>
+  </div></a>
+</form> -->

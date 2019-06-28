@@ -1,0 +1,26 @@
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-3">Hello, User!</h1>
+    <p>Do You See genre you like ? Please click like!!</p>
+  </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <input type="text" class="form-control" placeholder="Username"  #userName aria-label="Username" aria-describedby="basic-addon1">
+        <div class="col-2" style="
+        margin-left: 30px; margin-top:50px" *ngFor="let pref of Pref" >
+          <div class="card"  style="
+          margin-left: 40px;">
+            <img class="card-img-top" src={{pref.img}} alt="Card image cap">
+            <div class="card-body">
+              <button type="button" class="btn btn-primary"  style="
+               margin-left: 40px;" (click)="getPref(pref.genre_Type)">Like</button>
+             </div>
+          </div>
+        
+    </div>
+<button type="button"    style="
+margin-left: 600px;" class="btn btn-primary" (click)="LoadRegister2(userName.value)" >Next</button>
+  </div> 
+</div> 

@@ -1,0 +1,26 @@
+.card-img-top{
+    width :500px;
+     height:900px;
+     margin-left: 10px
+}
+.card{
+    width:500px;
+    height:900px;
+    padding-top: 0%
+    
+}
+.card-title{
+    margin-left: 10px;
+}
+.author-name {
+    margin-left: 10px;
+}
+.card-text {
+    margin-left: 10px;
+}
+.btn {
+ width: 200px;
+ height: 38px;
+
+}
+
